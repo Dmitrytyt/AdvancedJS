@@ -6,9 +6,7 @@ const timeParts = [
         dateMethod: 'getMonth',
         formatName: 'month',
     },{
-        start: function (nowDate) {
-            return 32 - new Date(nowDate.getFullYear(), nowDate.getMonth(), 32).getDate();
-        },
+        start: nowDate => 32 - new Date(nowDate.getFullYear(), nowDate.getMonth(), 32).getDate(),
         dateMethod: 'getDate',
         formatName: 'day',
     },{

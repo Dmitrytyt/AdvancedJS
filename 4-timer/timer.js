@@ -49,6 +49,7 @@ function run(elem, timeParts) {
     run(elem, timeParts);
 
     let timerId = setTimeout(function tick() {
+        window.clearTimeout(timerId);
         run(elem, timeParts);
         timerId = setTimeout(tick, 1000);
     }, 1000);

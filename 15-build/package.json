@@ -1,0 +1,28 @@
+{
+  "name": "15-build",
+  "version": "1.0.0",
+  "description": "Task build",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup index.js --file build/main.js --format iife",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitrytyt/AdvancedJS.git"
+  },
+  "keywords": [
+    "rollup-js"
+  ],
+  "author": "Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmitrytyt/AdvancedJS/issues"
+  },
+  "homepage": "https://github.com/Dmitrytyt/AdvancedJS#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "rollup": "^4.6.1"
+  }
+}
